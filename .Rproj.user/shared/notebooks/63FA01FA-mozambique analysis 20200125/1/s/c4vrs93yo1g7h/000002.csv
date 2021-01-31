@@ -1,0 +1,27 @@
+"0",""
+"0","for (i in 1:dim(plot.specs)[1]){try({"
+"0","  plot <- plot_graph(data = full.data,"
+"0","                     plot_var = plot.specs$indicator[i], "
+"0","                     plot_type = plot.specs$graphtype[i],"
+"0","                     mapping = full.mapping,"
+"0","                     title_text = plot.specs$titletext[i],"
+"0","                     color_palette = color_palette)"
+"0","  "
+"0","  save_plot(paste0(""/Users/keletsomakofane/Dropbox/Working Groups/Oneil institute/CLM Data Reports/Mozambique/2020 01 30 plots/"", "
+"0","                   paste(plot.specs$titlenr[i], plot.specs$titletext[i], sep = ""_""), "
+"0","                   "".png""), "
+"0","            plot = plot, "
+"0","            base_asp=2, "
+"0","            base_height = 5)"
+"0","  })"
+"0","  "
+"0","}"
+"2","Error in ans[ypos] <- rep(yes, length.out = len)[ypos] : 
+  replacement has length zero
+"
+"2","Error : Aesthetics must be either length 1 or the same as the data (1): x, xend and yend
+"
+"2","Error : Aesthetics must be either length 1 or the same as the data (1): x, xend and yend
+"
+"2","
+"

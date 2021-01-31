@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1612062988637.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A849ED43",
+    "lastKnownWriteTime" : 1612065378,
+    "last_content_update" : 1612065378019,
+    "path" : "~/Documents/_gitrepos/bulkgraphs/R/plot_donut.R",
+    "project_path" : "R/plot_donut.R",
+    "properties" : {
+        "cursorPosition" : "9,73",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

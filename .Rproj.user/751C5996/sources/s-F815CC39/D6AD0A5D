@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1612065340658.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D6AD0A5D",
+    "lastKnownWriteTime" : 1612068078,
+    "last_content_update" : 1612068078381,
+    "path" : "~/Documents/_gitrepos/bulkgraphs/R/plot_graph.R",
+    "project_path" : "R/plot_graph.R",
+    "properties" : {
+        "cursorPosition" : "11,2",
+        "scrollLine" : "30"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

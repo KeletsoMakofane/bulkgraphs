@@ -1,0 +1,7 @@
+"0",""
+"0","yes.color   <- ""#245772"""
+"0","maybe.color <- ""#399bcc"""
+"0","no.color    <- ""#5accff"""
+"0",""
+"0","color_palette <- c(yes.color, maybe.color, no.color)"
+"0",""
