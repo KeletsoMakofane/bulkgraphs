@@ -48,6 +48,10 @@ plot_graph <- function(data, plot_var, plot_type, mapping, title_text, color_pal
       dplyr::arrange(levelorder) %>%
       dplyr::mutate(value = factor(newlabel, unique(newlabel)))
   } 
+    
+    if (plot_type %in% c("hist", "hist.time")){
+      graphdata <- data 
+    } 
 
   plot <- switch(plot_type,
                  "bar"         = plot_bar(         graphdata, title_text, color_palette),

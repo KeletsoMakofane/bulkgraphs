@@ -22,23 +22,29 @@ plot_donut <- function(data, title_text, color_palette){
 
   percentage.success <- plot_data$prop[1]
 
-  plot <- ggplot2::ggplot(plot_data, aes(x = spacer, y = freq, fill = value)) +
-    ggplot2::geom_bar(width = 1, stat = "identity", position="fill", size = 0) +
+  plot.graph <- ggplot2::ggplot(plot_data, aes(x = spacer, y = freq, fill = value)) +
+    ggplot2::geom_bar(width = 1, stat = "identity", position= ggplot2::position_fill(reverse = TRUE), size = 0) +
     ggplot2::coord_polar("y", start=0) +
     ggplot2::scale_x_discrete(drop=FALSE) +
     ggplot2::scale_fill_manual(name = "", values = col.manual, labels = label.scale) +
     ggplot2::theme_void() +
     ggplot2::labs(tag = percentage.success) +
-    ggplot2::theme(plot.tag.position = c(0.5,0.55),
+    ggplot2::theme(plot.tag.position = c(0.5,0.5),
           legend.position = "bottom",
           plot.tag = element_text(size = 30, face = "bold", color = col.manual),
           legend.text = element_text(size = 14)) +
     ggplot2::guides(fill = guide_legend(direction = "vertical"))  +
-    ggplot2::labs(title = title_text) +
-    ggplot2::theme(plot.title = element_text(color = "black", size = 16, hjust = 0.5)) +
-    ggplot2::guides(fill = guide_legend(nrow = 1, 
-                               title.position="top"))
+    ggplot2::theme(plot.title = element_text(color = "black", size = 16, hjust = 0.5)) 
 
+  
+  plot <- cowplot::plot_grid(ggdraw() + 
+                               draw_label(title_text),
+                             plot.graph + 
+                               ggplot2::theme(legend.position = "none"), 
+                             cowplot::get_legend(plot.graph), 
+                             ncol = 1, 
+                             rel_heights = c(1, 10, length(plot_data$value)))
+  
 
   return(plot)
 }
